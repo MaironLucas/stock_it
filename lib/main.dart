@@ -1,12 +1,16 @@
 import 'dart:async';
 
 import 'package:domain/exceptions.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:logger/logger.dart';
 import 'package:stock_it/common/routing.dart';
+import 'package:stock_it/common/utils.dart';
+import 'package:stock_it/firebase_options.dart';
 import 'package:stock_it/generated/l10n.dart';
 
 class Log {
@@ -19,7 +23,7 @@ class Log {
   ]) async {
     logger.e(errorType, error, stackTrace);
     if (error is FirebaseLoggableException || error is! StockItException) {
-      // await logErrorOnFirebase(error, stackTrace);
+      await logErrorOnFirebase(error, stackTrace);
     }
   }
 }
@@ -31,11 +35,11 @@ Future<void> main() async {
 
   await runZonedGuarded(
     () async {
-      // await Firebase.initializeApp(
-      //   options: DefaultFirebaseOptions.currentPlatform,
-      // );
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
 
-      // FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+      FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
 
       await SystemChrome.setPreferredOrientations(
         <DeviceOrientation>[

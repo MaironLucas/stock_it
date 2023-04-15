@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "292142940477",
+    "project_id": "stockit-62cd6",
+    "storage_bucket": "stockit-62cd6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292142940477:android:e6a315d41433ed04ecc554",
+        "android_client_info": {
+          "package_name": "com.mairon.stock_it"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292142940477-64ni1iusut7e0lf01sbfc0psl5td5j4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKMTiXm-KZKUBx26fVwBU4n6i7eksuJe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292142940477-64ni1iusut7e0lf01sbfc0psl5td5j4k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292142940477-2993koc5a49rb4865dbmindmn230e5s0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.stockIt"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292142940477:android:ffd446cdad117d23ecc554",
+        "android_client_info": {
+          "package_name": "com.mairon.stock_it.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292142940477-64ni1iusut7e0lf01sbfc0psl5td5j4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKMTiXm-KZKUBx26fVwBU4n6i7eksuJe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292142940477-64ni1iusut7e0lf01sbfc0psl5td5j4k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292142940477-2993koc5a49rb4865dbmindmn230e5s0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.stockIt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
