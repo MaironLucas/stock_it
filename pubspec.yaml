@@ -35,11 +35,14 @@ dev_dependencies:
   build_runner: ^2.3.3
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^2.2.19
   isar_generator: ^3.0.5
   very_good_analysis: ^4.0.0+1
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
 
 flutter_intl:
   enabled: true
